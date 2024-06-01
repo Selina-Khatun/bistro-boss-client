@@ -1,17 +1,18 @@
-import React from 'react';
+
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
-    const navLinks=<>
-    
-    <li><NavLink className='mr-5 font-bold uppercase' to={'/'}>Home</NavLink></li>
-    <li><NavLink className='mr-5 font-bold uppercase' to={'/'}>CONTACT us</NavLink></li>
-    <li><NavLink className='mr-5 font-bold uppercase' to={'/'}>DASHBOARD</NavLink></li>
-    <li><NavLink className='mr-5 font-bold uppercase' to={'/menu'}>Our Menu</NavLink></li>
-    <li><NavLink className='mr-5 font-bold uppercase' to={'/'}>Our Shop</NavLink></li>
+    const navLinks = <>
+
+        <li><NavLink className='mr-5 font-bold uppercase' to={'/'}>Home</NavLink></li>
+        <li><NavLink className='mr-5 font-bold uppercase' to={'/'}>CONTACT us</NavLink></li>
+        <li><NavLink className='mr-5 font-bold uppercase' to={'/'}>DASHBOARD</NavLink></li>
+        <li><NavLink className='mr-5 font-bold uppercase' to={'/menu'}>Our Menu</NavLink></li>
+        <li><NavLink className='mr-5 font-bold uppercase' to={'/order/salad'}>Our Shop</NavLink></li>
+        <li><NavLink className='mr-5 font-bold uppercase' to={'/login'}>Login</NavLink></li>
     </>
     return (
-        <div className="navbar text-white bg-opacity-30 lg:w-[90.5%] fixed z-10 bg-black">
+        <div className="navbar text-white  bg-opacity-30 lg:w-[90.5%] fixed z-10 bg-black">
             <div className="navbar-start ">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -22,13 +23,13 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className='flex flex-col'>
-                <a className="text-xl">BISTRO BOSS</a>
-                <p>Restaurant</p>
+                    <a className="text-xl">BISTRO BOSS</a>
+                    <p>Restaurant</p>
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                {navLinks}
+                    {navLinks}
                 </ul>
             </div>
             <div className="navbar-end">
